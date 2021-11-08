@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.box{
+	height: 515px;
+	width: 308px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(walk.png);
+	background-repeat: no-repeat;
+	animation-name: move;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1,start);
+}
+
+
+.rel{
+	width: 1000px;
+	height: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	background-image: url(earth.jpg);
+	background-position: contain;
+	background-size: cover;
+	transition: transform 1s ease;
+	animation-name: rotate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 10s
+		
+}
+
+@keyframes rotate{
+	from{
+		transform: rotateZ(0deg)
+	}
+	
+	to{
+		transform: rotateZ(-360deg);	
+	}
+}
+
+
+@keyframes man{
+	0%{
+		background-position: left;
+	}
+	
+	14.28%{
+		background-position: -115px;
+	}
+	
+	28.56%{
+		background-position: -230px;
+	}
+	
+	42.84%{
+		background-position: -345px;
+	}
+	
+	57.12%{
+		background-position: -460px;
+	}
+	
+	71.4%{
+		background-position: -575px;
+	}
+	
+	85.68%{
+		background-position: -690px;
+	}
+	
+	100%{
+		background-position: -805px;
+	}
+}
+
+
+@keyframes move{
+	0%{
+		background-position: left;
+	}
+	
+	14.28%{
+		background-position: -308px;
+	}
+	
+	28.56%{
+		background-position: -616px;
+	}
+	
+	42.84%{
+		background-position: -914px;
+	}
+	
+	57.12%{
+		background-position: -1220px;
+	}
+	
+	71.4%{
+		background-position: -1510px;
+	}
+	
+	85.68%{
+		background-position: -1815px;
+	}
+	
+	100%{
+		background-position: -2111px;
+	}
+}
